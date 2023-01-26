@@ -5,7 +5,7 @@ class Admin::ProductsController < ApplicationController
     @products = Product.order(id: :desc).all
   end
 
-  def new
+  def new 
     @product = Product.new
   end
 
